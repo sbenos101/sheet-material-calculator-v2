@@ -214,7 +214,7 @@ h2 { pointer-events: none; }
 .app-outer .stat-val.bad { color: var(--error); }
 .app-outer .cut-list-row { display: grid; grid-template-columns: 20px 1fr 80px 50px; gap: 6px; padding: 6px 12px; align-items: center; color: var(--text-muted); font-size: 12px; }
 .app-outer .cut-list-row:hover { background: var(--bg2); }
-.app-outer .cut-list-head { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+.app-outer .cut-list-head { font-size: 10px; text-transform: uppercase; color: var(--text-dim); border-bottom: 1px solid var(--border); padding-bottom: 4px; }
 .app-outer .warning-banner { display: none; background: #ffffff; border: 1.5px solid #fde68a; border-radius: 7px; padding: 12px 16px; font-size: 13px; color: var(--warn); margin-bottom: 12px; line-height: 1.6; white-space: pre-line; width: 100%; }
 .app-outer .caveat-note { background: var(--bg2); border: 1.5px solid var(--border); border-radius: 7px; padding: 10px 14px; font-size: 12px; color: var(--text-dim); margin-bottom: 12px; line-height: 1.5; display: flex; align-items: flex-start; gap: 6px; width: 100%; }
 .app-outer .caveat-note svg { flex-shrink: 0; margin-top: 1px; }
