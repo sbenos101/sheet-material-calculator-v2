@@ -57,7 +57,7 @@ a.pagebuilder-button-primary:hover { box-shadow: 0 0 5px 0px #009845 !important;
 
 /* Tooltips */
 .group { cursor: pointer; }
-.group span { font-size: 12px; font-weight: normal; text-align: center; padding: 10px 15px; visibility: hidden; width: 200px; background-color: #333; color: white; border-radius: 6px; position: absolute; z-index: 10; bottom: 150%; margin-left: -80px; box-shadow: 0 3px 10px rgba(0,0,0,0.15); box-sizing: border-box; white-space: normal; overflow-wrap: break-word; }
+.group span { font-size: 12px; font-weight: normal; text-align: center; padding: 10px 15px; visibility: hidden; width: 200px; max-width: calc(100vw - 16px); background-color: #333; color: white; border-radius: 6px; position: absolute; z-index: 10; bottom: 150%; left: 50%; transform: translateX(-50%); box-shadow: 0 3px 10px rgba(0,0,0,0.15); box-sizing: border-box; white-space: normal; overflow-wrap: break-word; }
 .group:hover span, .group:focus-within span { visibility: visible; }
 
 /* Canvas and Previews */
@@ -388,6 +388,12 @@ h2 { pointer-events: none; }
 .stats-grid { grid-template-columns: max-content 1fr; }
 .stats-grid .k { align-self: center; }
 .stats-grid .v { justify-self: end; text-align: right; }
+
+}
+
+@media (max-width: 600px) {
+
+.tooltip-bubble { width: min(210px, calc(100vw - 16px)); max-width: calc(100vw - 16px); }
 
 }
 
